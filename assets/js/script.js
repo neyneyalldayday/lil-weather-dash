@@ -28,7 +28,7 @@ function search(city) {
       $("#city-info").empty();
 
       var iconCode = data.weather[0].icon;
-      var iconURL = `https://openweathermap.org/img/w/${iconCode}.png`;
+      var iconURL = `https://openweathermap.org/img/wn/${iconCode}.png`;
 
       // Appending new section for current forecast
       var currentCity = $(`
@@ -84,6 +84,7 @@ function search(city) {
               return response.json();
             })
             .then(function (weekResponse) {
+              console.log(weekResponse, "suckla")
               
               $(".five-day").empty();
 
@@ -95,7 +96,7 @@ function search(city) {
                 var iconURL = fiveDayArray[i].weather[0].icon;
                 var iconPic = `<img src="http://openweathermap.org/img/wn/${iconURL}@2x.png"/>`        
                 var futureCard = $(`
-                <div class="pl-3">
+                <div class="pl-3 card-border">
                     <div class="card pl-3 pt-3 mb-3 bg-primary text-light" style="width: 12rem;>
                         <div class="card-body ">
                             <p>${iconPic}</p>
