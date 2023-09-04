@@ -33,8 +33,9 @@ function search(city) {
       // Appending new section for current forecast
       var currentCity = $(`
             <h2 id="currentCity">
-                ${data.name} ${now}} <img src="${iconURL}" alt="${data.weather[0].description}" />
+                ${data.name} ${now}
             </h2>
+            <img src="${iconURL}" alt="${data.weather[0].description}" />
             <p>Temperature: ${data.main.temp} °Celsius</p>
             <p>Humidity: ${data.main.humidity}\%</p>
             <p>Wind Speed: ${data.wind.speed} KM/H</p>

@@ -64,8 +64,8 @@ display: flex;
 background-image: url(../images/clouds1.jpg);
 background-size: 100%;
 background-repeat: no-repeat;
-color: chartreuse;
-font-size: 2rem;
+color: rgb(242, 255, 0);
+font-size: 5rem;
 padding: 1rem;
 flex-wrap: wrap;
 }
@@ -76,6 +76,7 @@ flex-wrap: wrap;
 
 .history-btn{
     width: 7rem;
+    font-weight: bold;
 }
 
 .history-btn:hover{  
@@ -110,6 +111,16 @@ flex-wrap: wrap;
     box-shadow: 4px 3px 6px rgba(49, 34, 68, 0.6);
     border-radius: 5px;
     padding: 1rem;
+   
+}
+#city-info h2, p{
+   font-size: 1.5rem;
+   font-weight: bold;
+  }
+
+#currentCity{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 article{
@@ -121,6 +132,13 @@ article{
     border-radius: 5px;
     box-shadow: 4px 3px 6px rgba(123, 233, 321, 0.8);
     padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-border p{
+    font-size: 2.5rem;
+
 }
 
 @media screen and (max-width: 768px){
