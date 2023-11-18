@@ -20,6 +20,7 @@ function search(city) {
     `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`
   )
     .then(function (response) {
+      console.log(response)
       return response.json();
     })
     .then(function (data) {
@@ -113,13 +114,11 @@ function search(city) {
               }
             });
         });
-    });
-   
-    
+    });    
 }
 
 
-
+//for da kiiids
 
 function saveSearch(cityName) {
     var storedCity = document.getElementById("search-input").value;
