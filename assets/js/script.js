@@ -148,17 +148,5 @@ $(document).on("click", "#searchHistory li", function() {
 
 
 
-class Triangle extends Shape{
-  render(){
-    return `
-    <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
-  <!-- Define the triangle -->
-  <polygon points="100,10 40,190 190,190" style="fill:${this.color};stroke:blue;stroke-width:1" />
-  
-  <!-- Define the text line with letters ABC -->
-  <text x="100" y="120" font-size="24" text-anchor="middle" fill="${this.textColor}">${this.text}</text>
-</svg>
-    `
-  }
-}
+
 
